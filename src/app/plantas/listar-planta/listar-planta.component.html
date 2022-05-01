@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="container-fluid col">
+  <div class="p-5 text-center bg-light">
+    <h1 class="mb-3"
+        style="position: absolute;
+               width: 392px;
+               height: 48px;
+               left: 98px;
+               top: 14px;
+               font-family: 'Kaisei Decol';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 36px;
+               line-height: 52px;
+               color: #000000;">
+        Vivero el Otoño
+    </h1>
+  </div>
+  <hr style="position: absolute;
+              width: 1244.02px;
+              height: 0px;
+              left: 97.99px;
+              top: 82.54px;
+              background: #C4C4C4;
+              border: 1px solid rgba(0, 0, 0, 0.2);">
+  <div style="position: absolute;
+              width: 1244px;
+              height: 323px;
+              left: 97px;
+              top: 119px;
+              background: url(/assets/img/banner.png);"></div>
+  <hr style="position: absolute;
+              width: 1244.02px;
+              height: 0px;
+              left: 97.99px;
+              top: 446.54px;
+              border: 1px solid rgba(0, 0, 0, 0.2);">
+  <div style="position: absolute;
+              width: 792px;
+              height: 335px;
+              left: 98px;
+              top: 467px;">
+    <table class="table">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre Común</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Clima</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let planta of plantas; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>
+          {{ planta.nombre_comun }}
+        </td>
+        <td>{{ planta.tipo }}</td>
+        <td>{{ planta.clima }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="position: absolute;
+              width: 617px;
+              height: 83px;
+              left: 98px;
+              top: 829px;
+
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 24px;
+
+              color: #000000;">
+    Total plantas de interior:  {{ this.cantidadPlantasInterior }}<br />
+    Total plantas de exterior:  {{ this.cantidadPlantasExterior }}
+  </div>
+  <div>
+    <p style="position: absolute;
+              width: 645px;
+              height: 23px;
+              left: 350px;
+              top: 980px;
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 22px;
+              color: #000000;">
+        Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio
+        </p>
+  </div>
+</div>
+
